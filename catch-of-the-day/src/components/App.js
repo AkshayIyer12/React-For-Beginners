@@ -33,7 +33,7 @@ class App extends React.Component {
 			fishes: sampleFishes
 		});
 	}
-
+	addToOrder
 	render() {
 		return (
 		<div className="catch-of-the-day">
