@@ -15,6 +15,7 @@ class Order extends React.Component {
 		if(!fish || fish.status === 'unavailable') {
 			return <li key={key}>Sorry, { fish ? fish.name : 'fish'} is no longer available!</li>
 		}
+		
 		return (<li key={key}>
 			<span>{count}lbs {fish.name}</span>
 			<span className="price">{formatPrice(count * fish.price)}</span>
