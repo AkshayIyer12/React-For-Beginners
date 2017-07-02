@@ -33,7 +33,8 @@ class App extends React.Component {
 		});
 
 		//check if there is any order in the local storage
-		const localStorageRef = localStorage.getItem(`order-${this.props.params.storeId}`);
+		const localStorageRef = localStorage.getItem(`
+			order-${this.props.params.storeId}`);
 
 		if(localStorageRef) {
 			//Update our App component's order state
@@ -128,5 +129,9 @@ class App extends React.Component {
 		)
 	}
 }
+
+App.propTypes = {
+	params: React.PropTypes.object.isRequired
+};
 
 export default App;
